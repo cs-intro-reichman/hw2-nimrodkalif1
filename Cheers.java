@@ -5,14 +5,13 @@ public class Cheers {
             int repetitions = Integer.parseInt(args[1]);
 
             for (char c: word.toCharArray()) {
-                    if ("AEFHILMNORSX".indexOf(c) != -1)
-                            System.out.println("Give me an: " + c + "!");
-                    else
-                            System.out.println("Give me a:  " + c + "!");
+                if ("AEFHILMNORSX".indexOf(c) != -1)
+                    System.out.println("Give me an " + c  + ": " + c + "!");
+                else
+                    System.out.println("Give me a  " + c  + ": " + c + "!");
             }
             System.out.println("What does that spell?");
-            for (int i = 0; i < repetitions; i++) {
-                    System.out.println(word + "!!!");
-            }
+            for (int i = 0; i < repetitions; i++)
+                System.out.println(word + "!!!");
     }
 }
